@@ -1,0 +1,6 @@
+bin
+obj
+data
+site
+client/node_modules
+client/dist

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <RootNamespace>Site</RootNamespace>
+    <AssemblyName>Site</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.6.2" />
+  </ItemGroup>
+
+  <!-- The site and its description are read from the project folder at run time, not compiled in. -->
+  <ItemGroup>
+    <Content Remove="site/**;server.json;data/**;client/**" />
+    <None Remove="site/**;data/**;client/**" />
+    <Compile Remove="client/**" />
+  </ItemGroup>
+
+</Project>

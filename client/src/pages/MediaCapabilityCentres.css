@@ -1,0 +1,56 @@
+@media (max-width: 991px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig71wmbvv"] { flex-wrap: wrap !important; }
+.uide-site [data-uide-r][data-uide-r="menu_mvi5yig71y6383"] { gap: 16px !important; }
+}
+@media (max-width: 640px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig71v2uc8"] { padding: 12px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yig71xc738"] { font-size: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="button_mvi5yig7259ygz"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_hero"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_h1"] { font-size: 35px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_lead"] { font-size: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_hero_btn"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_what"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_what_row"] { gap: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_shift_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_def"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_def_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_india"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_india_headrow"] { gap: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_india_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k1h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k2h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k3h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k4"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_k4h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_exp"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_exp_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e1h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e2h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e3h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e4"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_e4h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_steps"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_steps_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s1h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s2h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s3h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s4"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_s4h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_cta"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_cta_row"] { gap: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_cta_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="mcc_cta_btn"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj08qm32v"] { padding: 42px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj08rqdi3"] { gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yjj08tu17v"] { font-size: 17px !important; }
+}

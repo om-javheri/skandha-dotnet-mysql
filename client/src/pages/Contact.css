@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig934awbu"] { flex-wrap: wrap !important; }
+.uide-site [data-uide-r][data-uide-r="menu_mvi5yig9369pjr"] { gap: 16px !important; }
+}
+@media (max-width: 640px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig933ekw1"] { padding: 12px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yig9354mid"] { font-size: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="button_mvi5yig93dmsix"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_hero"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_h1"] { font-size: 35px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_lead"] { font-size: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_main"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_row"] { gap: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_form_col"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_form_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_submit"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_info_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_person_h3"] { font-size: 23px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_phones_h3"] { font-size: 23px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_offices_h3"] { font-size: 23px !important; }
+.uide-site [data-uide-r][data-uide-r="ct_dubai_h3"] { font-size: 23px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj4caavoc"] { padding: 42px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj4cbzz08"] { gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yjj4cdo704"] { font-size: 17px !important; }
+}

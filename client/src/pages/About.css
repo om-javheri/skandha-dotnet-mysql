@@ -1,0 +1,56 @@
+@media (max-width: 991px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig82icuet"] { flex-wrap: wrap !important; }
+.uide-site [data-uide-r][data-uide-r="menu_mvi5yig82kt4m3"] { gap: 16px !important; }
+}
+@media (max-width: 640px) {
+.uide-site [data-uide-r][data-uide-r="container_mvi5yig82hz06r"] { padding: 12px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yig82jkjuk"] { font-size: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="button_mvi5yig82rq4cv"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_hero"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_h1"] { font-size: 35px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_lead"] { font-size: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_hero_btn"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_stats"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_stats_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n1n"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n2n"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n3n"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n4"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_n4n"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_core"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_core_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c1h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c2h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_c3h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_awards"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_aw_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a1"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a1h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a2"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a2h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a3"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a3h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a4"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a4h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a5"] { padding: 21px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_a5h"] { font-size: 19px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_team"] { padding: 56px 20px !important; gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_team_grid"] { gap: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_t1h"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_t2h"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_t3h"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_press_b"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_cta"] { padding: 56px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_cta_row"] { gap: 18px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_cta_h2"] { font-size: 26px !important; }
+.uide-site [data-uide-r][data-uide-r="ab_cta_btn"] { padding: 14px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj2aiowa6"] { padding: 42px 20px !important; }
+.uide-site [data-uide-r][data-uide-r="container_mvi5yjj2ajp8bx"] { gap: 22px !important; }
+.uide-site [data-uide-r][data-uide-r="link_mvi5yjj2alcha8"] { font-size: 17px !important; }
+}

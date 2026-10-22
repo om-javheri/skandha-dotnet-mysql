@@ -1,0 +1,43 @@
+{
+  "forms": {
+    "ct_form": 5
+  },
+  "pages": [
+    "/",
+    "/digital-first-services",
+    "/ai-ml-for-media",
+    "/customized-solutions",
+    "/digital-sports-operations",
+    "/managed-media-fabric",
+    "/vidre",
+    "/media-capability-centres",
+    "/media-verticals",
+    "/about",
+    "/news",
+    "/contact"
+  ],
+  "rules": {
+    "maxFields": 30,
+    "maxLabel": 100,
+    "maxValue": 5000,
+    "maxTotal": 20000,
+    "maxBody": 65536,
+    "messagesPerMinute": 5,
+    "viewsPerMinute": 60,
+    "keepMessages": 2000,
+    "maxPage": 300
+  },
+  "messages": {
+    "unreadable": "The message could not be read.",
+    "unknownForm": "This form doesn’t send messages here.",
+    "tooManyFields": "The message has more fields than the form.",
+    "empty": "Fill in the form first.",
+    "tooLong": "The message is too long.",
+    "tooMany": "Too many messages. Try again in a minute.",
+    "unauthorized": "Send the admin key as \"Authorization: Bearer <key>\".",
+    "notFound": "Not found"
+  },
+  "botPattern": "bot|crawl|spider|slurp|headless|lighthouse|preview|monitor|fetch|scan|curl|wget|python|java/|go-http|facebookexternalhit",
+  "embedCsp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox",
+  "database": "mysql"
+}

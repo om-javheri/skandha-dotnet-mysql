@@ -1,0 +1,285 @@
+html,
+body {
+  margin: 0;
+}
+
+/* Base look of a generated site. Scoped so the editor's own styles never leak in. */
+.uide-site {
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Noto Sans Devanagari', sans-serif;
+  color: #0f172a;
+  line-height: 1.6;
+  /* No page padding: top-level sections run edge to edge and keep the gutter inside (below). */
+  --uide-gutter: 24px;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #fff;
+  /* Slide-in entrances start off to the side; they must not make the page scroll sideways. */
+  overflow-x: clip;
+}
+.uide-site *,
+.uide-site *::before,
+.uide-site *::after {
+  box-sizing: border-box;
+}
+.uide-site h1,
+.uide-site h2,
+.uide-site h3,
+.uide-site h4,
+.uide-site h5,
+.uide-site h6 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 12px;
+}
+.uide-site h1 { font-size: 2.5rem; }
+.uide-site h2 { font-size: 2rem; }
+.uide-site h3 { font-size: 1.5rem; }
+.uide-site h4 { font-size: 1.25rem; }
+.uide-site h5 { font-size: 1.125rem; }
+.uide-site h6 { font-size: 1rem; }
+.uide-site p { margin: 0 0 12px; white-space: pre-wrap; overflow-wrap: anywhere; }
+.uide-site a { color: #4f46e5; text-decoration: underline; }
+/* The link to the page you are on (aria-current, set by both renderers): marked even where a menu turns underlines off. */
+.uide-site a[aria-current='page']:not(.uide-button) { font-weight: 700; text-decoration: underline !important; text-decoration-thickness: 2px !important; text-underline-offset: 6px; }
+.uide-site img { display: block; max-width: 100%; height: auto; margin: 0 0 12px; border-radius: 6px; }
+.uide-site .uide-container { display: flex; flex-direction: column; gap: 12px; padding: 16px 0; }
+/*
+ * Top-level sections: their background runs edge to edge, their content keeps the gutter and, on
+ * wide screens, a 1200px column. A section's own padding (inline) replaces this. Anything else at
+ * the top level (a heading, a text, a card…) keeps the gutter as a margin.
+ */
+.uide-site:not(.uide-island) > .uide-container { padding-left: max(var(--uide-gutter), calc((100% - 1200px) / 2)); padding-right: max(var(--uide-gutter), calc((100% - 1200px) / 2)); }
+.uide-site:not(.uide-island) > :not(.uide-container, .uide-embed, .uide-embed-missing, style) { margin-left: var(--uide-gutter); margin-right: var(--uide-gutter); }
+.uide-site .uide-card { display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid #e2e8f0; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgb(15 23 42 / 0.06); }
+.uide-site .uide-form { display: flex; flex-direction: column; gap: 12px; max-width: 480px; }
+.uide-site .uide-button {
+  display: inline-block; align-self: flex-start; padding: 10px 18px; border: 0; border-radius: 8px;
+  background: #4f46e5; color: #fff; font: inherit; font-weight: 600; cursor: pointer;
+  /* A button with a link is an <a>: it keeps the button look. */
+  text-decoration: none; text-align: center;
+}
+.uide-site .uide-input,
+.uide-site .uide-textarea {
+  display: block; width: 100%; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; color: inherit; background: #fff;
+}
+.uide-site .uide-textarea { min-height: 96px; resize: vertical; }
+/* A field the form won't send with (an email address that can't be one, docs/47) shows it. */
+.uide-site .uide-input[aria-invalid="true"],
+.uide-site .uide-textarea[aria-invalid="true"] { border-color: #dc2626; box-shadow: 0 0 0 3px rgb(220 38 38 / 0.25); }
+/* Forms that send: busy while sending; once sent, the thank-you text replaces the fields. */
+.uide-site .uide-form[data-uide-busy] { opacity: 0.6; pointer-events: none; }
+.uide-site .uide-form[data-uide-sent] > :not(.uide-form-status) { display: none; }
+.uide-site .uide-form-status { margin: 0; font-weight: 600; }
+.uide-site .uide-form-status:empty { display: none; }
+
+/* Phones: smaller headings and gutter, so text doesn't wrap one word per line. */
+@media (max-width: 640px) {
+  .uide-site { --uide-gutter: 16px; }
+  .uide-site h1 { font-size: 2rem; }
+  .uide-site h2 { font-size: 1.625rem; }
+  .uide-site h3 { font-size: 1.3rem; }
+}
+
+/* Section layouts (IR props.layout / props.columns). */
+.uide-site .uide-row { flex-direction: row; flex-wrap: wrap; align-items: center; }
+.uide-site .uide-grid { display: grid; grid-template-columns: repeat(var(--uide-cols, 2), minmax(0, 1fr)); gap: 16px; align-items: stretch; }
+.uide-site .uide-grid > .uide-button { justify-self: start; }
+@media (max-width: 640px) {
+  .uide-site .uide-grid { grid-template-columns: minmax(0, 1fr); }
+  /* Something to tap is at least 44 px each way (docs/48): links are their own components, never
+     inside running text, so every one of them is a target. */
+  .uide-site a, .uide-site .uide-button { min-height: 44px; min-width: 44px; }
+  .uide-site a:not(.uide-button) { display: inline-flex; align-items: center; }
+  /* Rows of content columns stack; rows of buttons, links and images stay rows and wrap. */
+  /* (Unless the row sets its own phone layout; see "Smaller screens" below.) */
+  .uide-site .uide-row:not([data-uide-phone-layout]):has(> .uide-container, > .uide-card, > .uide-form, > p, > h1, > h2, > h3, > h4, > h5, > h6) { flex-direction: column; align-items: stretch; }
+  /* Stacked, the columns fill the width (desktop widths like 25% would squeeze them). */
+  .uide-site .uide-row:not([data-uide-phone-layout]):has(> .uide-container, > .uide-card, > .uide-form, > p, > h1, > h2, > h3, > h4, > h5, > h6) > * { width: auto !important; max-width: 100%; }
+}
+
+/* ---- Smaller screens: visibility (props.hideOn*) and section layouts (props.tabletLayout…) ---- */
+/* In the editor hidden components stay visible, faded, so they can still be selected. */
+@media (min-width: 992px) {
+  .uide-site:not([data-uide-edit]) [data-uide-hide~='desktop'] { display: none !important; }
+  .uide-site[data-uide-edit] [data-uide-hide~='desktop'] { opacity: 0.35; outline: 1px dashed #94a3b8; }
+}
+@media (min-width: 641px) and (max-width: 991px) {
+  .uide-site:not([data-uide-edit]) [data-uide-hide~='tablet'] { display: none !important; }
+  .uide-site[data-uide-edit] [data-uide-hide~='tablet'] { opacity: 0.35; outline: 1px dashed #94a3b8; }
+}
+@media (max-width: 991px) {
+  .uide-site [data-uide-tablet-layout='stack'] { display: flex; flex-direction: column; }
+  .uide-site [data-uide-tablet-layout='row'] { display: flex; flex-direction: row; flex-wrap: wrap; }
+  .uide-site [data-uide-tablet-layout='grid'] { display: grid; grid-template-columns: repeat(var(--uide-tablet-cols, 2), minmax(0, 1fr)); }
+}
+@media (max-width: 640px) {
+  .uide-site:not([data-uide-edit]) [data-uide-hide~='phone'] { display: none !important; }
+  .uide-site[data-uide-edit] [data-uide-hide~='phone'] { opacity: 0.35; outline: 1px dashed #94a3b8; }
+  .uide-site [data-uide-phone-layout='stack'] { display: flex; flex-direction: column; }
+  /* Stacked, columns fill the width (a desktop width like 45% would squeeze a heading off the screen). */
+  .uide-site [data-uide-phone-layout='stack'] > :not(img) { width: auto !important; max-width: 100%; }
+  .uide-site [data-uide-phone-layout='row'] { display: flex; flex-direction: row; flex-wrap: wrap; }
+  .uide-site [data-uide-phone-layout='grid'] { display: grid; grid-template-columns: repeat(var(--uide-phone-cols, 1), minmax(0, 1fr)); }
+  .uide-site .uide-grid[data-uide-phone-cols] { grid-template-columns: repeat(var(--uide-phone-cols), minmax(0, 1fr)); }
+}
+@media (min-width: 641px) and (max-width: 991px) {
+  .uide-site .uide-grid[data-uide-tablet-cols] { grid-template-columns: repeat(var(--uide-tablet-cols), minmax(0, 1fr)); }
+}
+
+/* A logo link: the picture is as tall as the link's text is set (fontSize sizes the logo). */
+.uide-site .uide-link-logo { display: block; height: 1.6em; width: auto; max-width: none; }
+
+/* ---- Icons (icon fonts load separately, only on pages that use them) ---- */
+.uide-site .uide-icon { display: inline-block; align-self: flex-start; line-height: 1; }
+.uide-site a > i,
+.uide-site .uide-button > i { display: inline-block; line-height: 1; }
+/* Icon-only links and buttons (e.g. round social icons) centre their icon. */
+.uide-site a:has(> i + span:empty),
+.uide-site .uide-button:has(> i + span:empty) { display: inline-flex; align-items: center; justify-content: center; }
+.uide-site a > i:has(+ span:not(:empty)),
+.uide-site .uide-button > i:has(+ span:not(:empty)) { margin-right: 0.5em; }
+.uide-site .uide-grid > .uide-icon { justify-self: start; }
+.uide-site .uide-align-center > .uide-icon { align-self: center; }
+.uide-site .uide-align-right > .uide-icon { align-self: flex-end; }
+
+/* ---- Menus: links in a row that fold behind a menu button on smaller screens ---- */
+.uide-site .uide-menu { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 16px; position: relative; }
+.uide-site .uide-menu-items { display: contents; }
+.uide-site .uide-menu-toggle {
+  display: none; align-items: center; justify-content: center; width: 44px; height: 40px; margin-left: auto; padding: 0;
+  border: 1px solid color-mix(in srgb, currentColor 35%, transparent); border-radius: 6px; background: transparent; color: inherit; cursor: pointer;
+}
+.uide-site .uide-menu-bars,
+.uide-site .uide-menu-bars::before,
+.uide-site .uide-menu-bars::after { display: block; width: 20px; height: 2px; border-radius: 1px; background: currentColor; }
+.uide-site .uide-menu-bars { position: relative; }
+.uide-site .uide-menu-bars::before,
+.uide-site .uide-menu-bars::after { content: ''; position: absolute; left: 0; }
+.uide-site .uide-menu-bars::before { top: -6px; }
+.uide-site .uide-menu-bars::after { top: 6px; }
+@media (max-width: 991px) {
+  .uide-site .uide-menu[data-uide-collapse='tablet'] > .uide-menu-toggle { display: inline-flex; }
+  .uide-site .uide-menu[data-uide-collapse='tablet'] > .uide-menu-items { display: none; }
+  .uide-site .uide-menu[data-uide-collapse='tablet'][data-uide-open] > .uide-menu-items { display: flex; }
+}
+@media (max-width: 640px) {
+  .uide-site .uide-menu[data-uide-collapse='phone'] > .uide-menu-toggle { display: inline-flex; }
+  .uide-site .uide-menu[data-uide-collapse='phone'] > .uide-menu-items { display: none; }
+  .uide-site .uide-menu[data-uide-collapse='phone'][data-uide-open] > .uide-menu-items { display: flex; }
+}
+/* Folded items open as a panel under the button, one per line. */
+@media (max-width: 991px) {
+  .uide-site .uide-menu[data-uide-collapse='tablet'] > .uide-menu-items {
+    position: absolute; top: calc(100% + 8px); right: 0; z-index: 50; flex-direction: column; align-items: stretch; gap: 4px;
+    min-width: 220px; max-width: min(320px, calc(100vw - 32px)); padding: 12px; border-radius: 8px;
+    background: var(--uide-menu-panel, #fff); box-shadow: 0 12px 32px rgb(15 23 42 / 0.18);
+  }
+  .uide-site .uide-menu[data-uide-collapse='tablet'] > .uide-menu-items .uide-row { flex-direction: column; align-items: stretch; }
+  .uide-site .uide-menu[data-uide-collapse='tablet'] > .uide-menu-items * { max-width: 100%; }
+}
+@media (max-width: 640px) {
+  .uide-site .uide-menu[data-uide-collapse='phone'] > .uide-menu-items {
+    position: absolute; top: calc(100% + 8px); right: 0; z-index: 50; flex-direction: column; align-items: stretch; gap: 4px;
+    min-width: 220px; max-width: min(320px, calc(100vw - 32px)); padding: 12px; border-radius: 8px;
+    background: var(--uide-menu-panel, #fff); box-shadow: 0 12px 32px rgb(15 23 42 / 0.18);
+  }
+  .uide-site .uide-menu[data-uide-collapse='phone'] > .uide-menu-items .uide-row { flex-direction: column; align-items: stretch; }
+  .uide-site .uide-menu[data-uide-collapse='phone'] > .uide-menu-items * { max-width: 100%; }
+}
+/* A folded menu opens under its whole bar, inside the screen: anchored to the section holding it, not to its
+   button, which may sit in the middle of the bar (logo, menu, then a button) so a panel under it ran off the edge. */
+@media (max-width: 991px) {
+  .uide-site > :has(.uide-menu[data-uide-collapse='tablet']) { position: relative; }
+  .uide-site > :has(.uide-menu[data-uide-collapse='tablet']) .uide-menu[data-uide-collapse='tablet'] { position: static; }
+  .uide-site > :has(.uide-menu[data-uide-collapse='tablet']) .uide-menu[data-uide-collapse='tablet'] > .uide-menu-items {
+    top: calc(100% - 4px); left: 12px; right: 12px; min-width: 0; max-width: none;
+  }
+}
+@media (max-width: 640px) {
+  .uide-site > :has(.uide-menu[data-uide-collapse='phone']) { position: relative; }
+  .uide-site > :has(.uide-menu[data-uide-collapse='phone']) .uide-menu[data-uide-collapse='phone'] { position: static; }
+  .uide-site > :has(.uide-menu[data-uide-collapse='phone']) .uide-menu[data-uide-collapse='phone'] > .uide-menu-items {
+    top: calc(100% - 4px); left: 12px; right: 12px; min-width: 0; max-width: none;
+  }
+}
+
+/* Centred or right-aligned sections: flex items follow the text alignment. */
+.uide-site .uide-align-center > .uide-button,
+.uide-site .uide-align-center > .uide-row { align-self: center; }
+.uide-site .uide-align-right > .uide-button,
+.uide-site .uide-align-right > .uide-row { align-self: flex-end; }
+.uide-site .uide-align-center > .uide-form { align-self: center; }
+
+/* ---- Exact-copy pages (embed): the original page, full viewport, scrolling inside its frame ---- */
+.uide-embed {
+  display: block;
+  width: 100%;
+  /* Pages with their own chrome above the site (e.g. a toolbar) set this to the space left. */
+  height: var(--uide-embed-height, 100vh);
+  border: 0;
+}
+/* A page that is just an exact copy fills the whole site area, edge to edge. */
+.uide-site:has(> .uide-embed:only-child) {
+  padding: 0;
+  min-height: 0;
+}
+.uide-embed-missing {
+  padding: 48px 24px;
+  text-align: center;
+  color: #64748b;
+}
+
+/* ---- Built-in interactions (props.animation / animationDelay / hoverEffect) ---- */
+/* Hover effects use the individual translate/scale properties, so they combine with entrance transforms. */
+[data-uide-hover] {
+  transition: translate 0.25s ease, scale 0.25s ease, box-shadow 0.25s ease;
+}
+/*
+ * Entrances. Content is visible by default: it is hidden only once the page's script has marked
+ * the document ready (html.uide-anim-ready), so without scripts (crawlers, a failed script, a
+ * full-page screenshot) nothing stays invisible. Once in view ([data-uide-in]) it plays a keyframe
+ * animation from its start position, so hiding never shows as a fade-out.
+ */
+[data-uide-anim] {
+  transition: translate 0.25s ease, scale 0.25s ease, box-shadow 0.25s ease;
+}
+.uide-anim-ready [data-uide-anim]:not([data-uide-in]) {
+  opacity: 0;
+}
+.uide-anim-ready [data-uide-anim][data-uide-in] {
+  animation: 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) var(--uide-delay, 0ms) both uide-fade-in;
+}
+.uide-anim-ready [data-uide-anim='fade-up'][data-uide-in] { animation-name: uide-fade-up; }
+.uide-anim-ready [data-uide-anim='zoom-in'][data-uide-in] { animation-name: uide-zoom-in; }
+.uide-anim-ready [data-uide-anim='slide-left'][data-uide-in] { animation-name: uide-slide-left; }
+.uide-anim-ready [data-uide-anim='slide-right'][data-uide-in] { animation-name: uide-slide-right; }
+@keyframes uide-fade-in { from { opacity: 0; } }
+@keyframes uide-fade-up { from { opacity: 0; transform: translateY(32px); } }
+@keyframes uide-zoom-in { from { opacity: 0; transform: scale(0.92); } }
+@keyframes uide-slide-left { from { opacity: 0; transform: translateX(48px); } }
+@keyframes uide-slide-right { from { opacity: 0; transform: translateX(-48px); } }
+[data-uide-hover='lift']:hover {
+  translate: 0 -6px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.18);
+}
+[data-uide-hover='grow']:hover {
+  scale: 1.04;
+}
+[data-uide-hover='glow']:hover {
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, currentColor 30%, transparent),
+    0 10px 30px color-mix(in srgb, currentColor 25%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .uide-anim-ready [data-uide-anim]:not([data-uide-in]) {
+    opacity: 1;
+  }
+  .uide-anim-ready [data-uide-anim][data-uide-in] {
+    animation: none;
+  }
+  [data-uide-hover]:hover {
+    translate: none;
+    scale: none;
+  }
+}

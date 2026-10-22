@@ -1,0 +1,61 @@
+# Skandha Media Services
+
+> Cloud-native media operations for broadcasters, OTT platforms and rights holders: playout, live sports, ad operations, AI tools and Media Capability Centres, from Mumbai and Dubai.
+
+Skandha Media Services Pvt Ltd is a company.
+Address: B206/309, Everest Grande, Mahakali Caves Road, Andheri (E), Mumbai 400093, India
+Email: globalsales@skandhams.com
+Phone: +91 22 62040500
+Elsewhere: https://www.linkedin.com/company/skandha-media-services
+
+## Pages
+
+- [Skandha Media Services: cloud media operations](https://skandha-dotnet-mysql.onrender.com/): Skandha Media Services, founded in 2013 in Mumbai, runs media operations for broadcasters, OTT platforms, content owners and rights holders: cloud infrastructure, playout, VOD transcoding, content management, live sports and ad operations, built around Media Capability Centres.
+- [Digital first services | Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/digital-first-services/): Skandha's digital first services cover development, operations, downlinking and hosting, ad operations and AI Ops across on-prem, cloud and hybrid set-ups.
+- [AI/ML for media | Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/ai-ml-for-media/): Skandha uses AI and machine learning to detect problems early and to verify, place and target ads, including Evince visual proof of delivery and addressable TV.
+- [Customized live streaming solutions | Skandha](https://skandha-dotnet-mysql.onrender.com/customized-solutions/): Skandha builds custom live streaming for each event, with SaaS playout, IP delivery to affiliates, sports playout and automated pipelines from trigger to transmission.
+- [Digital sports operations | Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/digital-sports-operations/): Skandha runs live sports playout with automated ad QC, server- and client-side ad insertion, real-time ad monitoring and a 24x7 managed ad operations team.
+- [Managed media fabric with Mediaexcel | Skandha](https://skandha-dotnet-mysql.onrender.com/managed-media-fabric/): Skandha and Mediaexcel offer managed encoding and delivery: HERO live, file and event encoders, synchronisation and remote management, run and monitored by Skandha.
+- [vidRE video reliability engineering | Skandha](https://skandha-dotnet-mysql.onrender.com/vidre/): vidRE is Skandha's video reliability engineering service: one dashboard for the whole streaming stack, predictive alerts, auto-scaling and tests under real network conditions.
+- [Media Capability Centres (MCC) | Skandha](https://skandha-dotnet-mysql.onrender.com/media-capability-centres/): A Media Capability Centre runs media operations from one central, cloud-based hub. Skandha builds MCCs in India for global media companies in four steps: discovery, design, deploy and scale.
+- [Media verticals we serve | Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/media-verticals/): Skandha serves content owners and rights holders, broadcasters, OTT platforms, brands and advertisers, post-production and gaming and eSports with tailored digital operations.
+- [About Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/about/): Skandha Media Services was founded in 2013 and has more than 200 people. It built BluLive Pro, Evince and SyncView, holds ISO 27001:2022 and works with clients such as FanCode.
+- [News, case studies and whitepaper | Skandha](https://skandha-dotnet-mysql.onrender.com/news/): Latest news from Skandha Media Services, including partnerships with Mediaexcel, Warner Bros. Discovery and EFC, new hires, the Dubai office, and case studies.
+- [Contact Skandha Media Services](https://skandha-dotnet-mysql.onrender.com/contact/): Contact Skandha Media Services through the form, by phone on +91 22 62040500 or +91 9082558674, or at the Mumbai and Dubai offices.
+
+## Skandha Media Services: cloud media operations: questions and answers
+
+### What does Skandha Media Services do?
+
+Skandha runs media operations for broadcasters, OTT platforms, content owners and rights holders: cloud media infrastructure, playout, VOD transcoding, content management, live sports and ad operations.
+
+### Where is Skandha based?
+
+Skandha is based in Andheri (E), Mumbai, with an office in Dubai Media City for the Middle East and North Africa.
+
+### When was Skandha founded?
+
+Skandha Media Services was founded in 2013 and has more than 200 employees.
+
+
+## Media Capability Centres (MCC) | Skandha: questions and answers
+
+### What is a Media Capability Centre?
+
+A Media Capability Centre (MCC) is a central, cloud-based and AI-assisted hub that runs media operations end to end, including production, playout, archiving and monetisation, from one point of control.
+
+### Why build an MCC in India?
+
+India offers a large pool of skilled people, strong digital infrastructure, 24x7 multilingual operations and lower operating costs.
+
+### How does Skandha build an MCC?
+
+In four steps: discovery, design of a modular architecture, deployment of AI-led cloud systems, and scaling with more capabilities and automation.
+
+
+## Contact Skandha Media Services: questions and answers
+
+### How do I contact Skandha Media Services?
+
+Use the contact form, call +91 22 62040500 or +91 9082558674, or visit the office at B206/309, Everest Grande, Mahakali Caves Road, Andheri (E), Mumbai 400093.
+
